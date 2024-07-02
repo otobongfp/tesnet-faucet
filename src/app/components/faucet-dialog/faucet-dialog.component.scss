@@ -1,0 +1,121 @@
+/* Default styles for larger screens */
+.main {
+  border: solid 1px rgba(182, 195, 195, 0.661);
+  border-radius: 7px;
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.left-align {
+  position: absolute;
+  left: 20px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.centre-align {
+  position: absolute;
+  text-align: center;
+}
+
+.info {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(104, 103, 103);
+}
+
+.margin-bottom {
+  padding-bottom: 40px;
+}
+
+.testnet {
+  border: solid 1px rgba(182, 195, 195, 0.661);
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.amount {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  min-width: 100px;
+  border-radius: 7px;
+  border: solid 1px rgba(182, 195, 195, 0.661);
+}
+
+.form {
+  min-width: 200px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.full-width {
+  width: 90%;
+}
+
+.text-white {
+  color: #05164d;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  color: #05164d;
+}
+
+.container {
+  border: solid 1px rgba(182, 195, 195, 0.661);
+  border-radius: 7px;
+}
+
+/* Media query for tablets and smaller desktops */
+@media (max-width: 768px) {
+  .main {
+    max-width: 500px;
+    min-width: 350px;
+    padding: 15px;
+  }
+
+  .submit {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .main {
+    max-width: 300px;
+    min-width: 200px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .left-align {
+    position: absolute;
+    left: 10px;
+  }
+
+  .centre-align {
+    position: static;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .submit {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

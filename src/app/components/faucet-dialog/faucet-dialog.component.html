@@ -1,0 +1,84 @@
+<div class="main">
+  <mat-grid-list class="margin-bottom" cols="4" rowHeight="25px">
+    <mat-grid-tile colspan="4"
+      ><h2 class="left-align">Request Test Tokens</h2>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2"
+      ><p class="left-align info">
+        Maximum of a request per day
+      </p></mat-grid-tile
+    >
+  </mat-grid-list>
+  <!-- <mat-grid-tile><div class="testnet">TestNet</div></mat-grid-tile> -->
+
+  <mat-grid-list cols="4" rowHeight="70px">
+    <mat-grid-tile colspan="3"
+      ><form class="form left-align">
+        <mat-form-field class="full-width">
+          <mat-label>Address</mat-label>
+          <input
+            matInput
+            placeholder="Testnet address"
+            [formControl]="address"
+          />
+        </mat-form-field></form
+    ></mat-grid-tile>
+    <mat-grid-tile colspan="1"
+      ><div class="amount" [matMenuTriggerFor]="amount">
+        {{ amountText }}
+        @if(amountState){
+        <span>LTO</span>
+        }
+      </div>
+      <mat-menu #amount="matMenu">
+        <mat-grid-list cols="2">
+          <mat-grid-tile
+            ><button
+              mat-menu-item
+              class="centre-align text-white"
+              (click)="getAmount(5)"
+            >
+              5
+            </button>
+          </mat-grid-tile>
+          <mat-grid-tile
+            ><button
+              mat-menu-item
+              class="centre-align text-white"
+              (click)="getAmount(10)"
+            >
+              10
+            </button></mat-grid-tile
+          >
+          <!-- <mat-grid-tile colspan="2"
+            ><button
+              mat-menu-item
+              class="centre-align text-white"
+              (click)="getAmount(7)"
+            >
+              7
+            </button></mat-grid-tile
+          > -->
+        </mat-grid-list>
+      </mat-menu></mat-grid-tile
+    >
+
+    <mat-grid-tile colspan="4"
+      ><div class="container submit" (click)="submit()">
+        <span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#05164d"
+          >
+            <path
+              d="M520-120v-80h184L520-384v-112l240 240v-184h80v320H520ZM240-280v-40H120v-80h240v-120H200q-33 0-56.5-23.5T120-600v-120q0-33 23.5-56.5T200-800h40v-40h80v40h120v80H200v120h160q33 0 56.5 23.5T440-520v120q0 33-23.5 56.5T360-320h-40v40h-80Z"
+            />
+          </svg> </span
+        >Submit
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
