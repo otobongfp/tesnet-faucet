@@ -1,6 +1,10 @@
 {
   "name": "lto-faucet",
   "version": "0.0.0",
+  "description": "Developer tooling for accessing testnet tokens on the lto network",
+  "contributors": [
+    "Otobong Peter - otigodsent@gmail.com"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

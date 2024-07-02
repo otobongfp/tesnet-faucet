@@ -1,7 +1,7 @@
 //export const { api_host } = process.env;
-const api_host = 'https://lionfish-app-xpzm4.ondigitalocean.app';
+const api_host = 'localhost:4000';
 
 export const environment = {
-  production: false,
+  production: true,
   apiUrl: api_host,
 };
